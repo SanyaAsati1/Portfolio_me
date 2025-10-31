@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Portfolio</h1>
-<hr/>
-    <h3>Name: Sanya Asati</h3>
-    <h3>Age:20</h3>
-      <hr/>
-    <h2>My projects:</h2>
-    <ol>
-    <li><a href="./Movie_project/Movie_ranking.html">Movies Ranking </a> </li>
-  <p>(This is about movies I like the most)</p>
-  
-  <li><a href="./Music_project/Music_file/music_code/musecode.html">Music classes</a></li>
-  
-    
-    </ol>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
