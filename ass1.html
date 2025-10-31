@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>FSD_Ass1</title>
+</head>
+<body>
+   
+  <header class="bg-primary text-white text-center p-4" id="main-header">
+    <h1>Simple Survey Page</h1>
+  </header>
+
+
+  <section class="container my-4 intro-text">
+    <p class="lead text-center">
+      Please Share Your Feedback. 
+    </p>
+  </section>
+
+
+  <section class="container">
+    <form class="p-4 border rounded shadow bg-light" id="survey-form">
+      
+      <!-- Name -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+
+ 
+      <div class="mb-3">
+        <label class="form-label">What features do you like? (Select all that apply)</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Design" id="design">
+          <label class="form-check-label" for="design">Design</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Ease of Use" id="ease">
+          <label class="form-check-label" for="ease">Ease of Use</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Performance" id="performance">
+          <label class="form-check-label" for="performance">Performance</label>
+        </div>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="feedback" class="form-label">Your Feedback:</label>
+        <textarea class="form-control" id="feedback" rows="4" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+  
+      <div class="text-center">
+        <button type="submit" class="btn btn-success px-4">Submit</button>
+      </div>
+
+    </form>
+  </section>
+</body>
+</html>
